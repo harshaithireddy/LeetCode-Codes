@@ -29,14 +29,12 @@ public:
         }
 
         ListNode* newHead = NULL;
-        ListNode* curr = newHead;
         while(!st.empty()) {
             ListNode* newNode = new ListNode(st.top());
             st.pop();
-            newNode->next = curr;
-            curr = newNode;
+            newNode->next = newHead;
+            newHead = newNode;
         }
-        
-        return curr;
+        return newHead;
     }
 };
