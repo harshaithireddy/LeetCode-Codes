@@ -14,7 +14,7 @@ private:
         if(b == 0) {
             return a;
         }
-        return GCD(b, a%b);
+        return GCD(b, a % b);
     }
 public:
     ListNode* insertGreatestCommonDivisors(ListNode* head) {
