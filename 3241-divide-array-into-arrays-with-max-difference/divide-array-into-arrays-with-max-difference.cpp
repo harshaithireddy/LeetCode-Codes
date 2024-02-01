@@ -5,7 +5,7 @@ public:
         vector<vector<int>> V;
         for(int i = 0; i < nums.size(); i += 3) {
             vector<int> A;
-            for(int j = i; j < i+3  && j < nums.size(); j++) {
+            for(int j = i; j < i+3; j++) {
                 A.push_back(nums[j]);
             }
             int diff1 = abs(A[1] - A[0]);
