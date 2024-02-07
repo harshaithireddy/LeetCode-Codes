@@ -5,30 +5,18 @@ public:
         for(int i = 0; i < s.size(); i++) {
             mpp[s[i]]++;
         }
-        vector<pair<char, int>> vec(mpp.begin(), mpp.end());
 
-        sort(vec.begin(), vec.end(), [](auto a, auto b) {
-            return a.second > b.second;
-        });
+        multimap<int, char, greater<int>> m;
+        for(auto it : mpp) {
+            m.insert({it.second, it.first});
+        }
 
         string res;
-        for(auto it : vec) {
-            for(int i = 0; i < it.second; i++) {
-                res += it.first;
+        for(auto it : m) {
+            for(int i = 0; i < it.first; i++) {
+                res += it.second;
             }
         }
         return res;
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
