@@ -1,5 +1,9 @@
 class Solution {
 public:
+    Solution() {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+    }
     bool isCovered(vector<vector<int>>& ranges, int left, int right) {
         vector<int> V(right + 1, 0);
         for(auto it : ranges) {
