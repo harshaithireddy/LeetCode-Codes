@@ -1,5 +1,9 @@
 class Solution {
 public:
+    Solution() {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+    }
     vector<vector<int>> findMatrix(vector<int>& nums) {
         vector<vector<int>> V;
         
