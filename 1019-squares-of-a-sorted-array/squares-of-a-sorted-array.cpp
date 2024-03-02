@@ -1,5 +1,9 @@
 class Solution {
 public:
+    Solution() {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+    }
     vector<int> sortedSquares(vector<int>& nums) {
         vector<int> res(nums.size());
         for(int i = 0; i < nums.size(); i++) {
