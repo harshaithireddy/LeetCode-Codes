@@ -17,13 +17,9 @@ public:
                 power -= tokens[i];
                 i++;
             }
-            else if(score > 0 && power + tokens[j] > tokens[i]) {
+            else if(score > 0) {
                 score -= 1;
                 power += tokens[j];
-                j--;
-            }
-            else {
-                i++;
                 j--;
             }
             maxi = max(maxi, score);
