@@ -1,5 +1,9 @@
 class Solution {
 public:
+    Solution() {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+    }
     string evaluate(string s, vector<vector<string>>& knowledge) {
         unordered_map<string, string> mpp;
         for(auto it : knowledge) {
