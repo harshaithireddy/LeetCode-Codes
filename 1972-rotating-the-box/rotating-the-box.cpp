@@ -28,18 +28,9 @@ public:
                 if(x[j] == '*') {
                     j--;
                     i = j + 1;
-                    continue;
-                }
-                if(x[i] == '.' && x[j] == '*' || x[i] == '*' && x[j] == '.') {
-                    i--;
-                    j--;
                 }
                 else if(x[i] == '.' && x[j] == '#') {
                     swap(x[i], x[j]);
-                    i--;
-                    j--;
-                }
-                else if(x[i] == '*' && x[j] == '#') {
                     i--;
                     j--;
                 }
