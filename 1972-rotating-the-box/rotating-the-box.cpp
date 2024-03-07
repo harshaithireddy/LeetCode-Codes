@@ -1,6 +1,7 @@
 class Solution {
 public:
     vector<vector<char>> rotateMatrix(vector<vector<char>>& matrix) {
+        ios_base::sync_with_stdio(false);
         int m = matrix.size();
         int n = matrix[0].size();
 
@@ -18,6 +19,7 @@ public:
     }
 
     vector<vector<char>> rotateTheBox(vector<vector<char>>& box) {
+        ios_base::sync_with_stdio(false);
         for(auto &it : box) {
             vector<char>& x = it;
             int i = x.size() - 1;
