@@ -11,6 +11,7 @@
 class Solution {
 public:
     ListNode* removeZeroSumSublists(ListNode* head) {
+        ios_base::sync_with_stdio(false);
         if(head == NULL) return 0;
 
         ListNode* dummy = new ListNode(0, head);
