@@ -1,6 +1,7 @@
 class Solution {
 public:
     int numSubarraysWithSum(vector<int>& nums, int goal) {
+        ios_base::sync_with_stdio(false);
         unordered_map<int, int> mpp;
         int sum = 0;
         int cnt = 0;
