@@ -1,6 +1,7 @@
 class Solution {
 public:
     int findMaxLength(vector<int>& nums) {
+        ios_base::sync_with_stdio(false);
         unordered_map<int, int> mpp;
         int cnt = 0;
         int sum = 0;
