@@ -11,9 +11,9 @@
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int left, int right) {
+        ios_base::sync_with_stdio(false);
         if(head == NULL || left >= right) return head;
 
-        
         ListNode* dummy = new ListNode(-1);
         dummy->next = head;
 
@@ -26,6 +26,7 @@ public:
         }
         ListNode* leftPrev = prev;
         prev = NULL;
+
 
         for(int i = 0; i < right-left+1; i++) {
             ListNode* tempNext = curr->next;
