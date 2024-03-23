@@ -11,6 +11,7 @@
 class Solution {
 public:
     void reorderList(ListNode* head) {
+        ios_base::sync_with_stdio(false);
         if(head == NULL || head->next == NULL) {
             return;
         }
