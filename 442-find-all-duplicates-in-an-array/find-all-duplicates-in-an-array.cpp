@@ -1,8 +1,9 @@
 class Solution {
 public:
     vector<int> findDuplicates(vector<int>& nums) {
+        ios_base::sync_with_stdio(false);
         vector<int> res;
-        
+
         for(int i = 0; i < nums.size(); i++) {
             int num = abs(nums[i]);
 
