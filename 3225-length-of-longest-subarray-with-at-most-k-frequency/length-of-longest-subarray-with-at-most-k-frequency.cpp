@@ -1,6 +1,7 @@
 class Solution {
 public:
     int maxSubarrayLength(vector<int>& nums, int k) {
+        ios_base::sync_with_stdio(false);
         unordered_map<int, int> mpp;
         int maxi = 0;
         int i = 0;
