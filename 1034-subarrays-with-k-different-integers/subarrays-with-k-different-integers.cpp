@@ -18,6 +18,7 @@ class Solution {
     }
 public:
     int subarraysWithKDistinct(vector<int>& nums, int k) {
+        ios_base::sync_with_stdio(false);
         int x = subarraysCount(nums, k);
         int y = subarraysCount(nums, k - 1);
 
