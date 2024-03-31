@@ -1,6 +1,7 @@
 class Solution {
 public:
     long long countSubarrays(vector<int>& nums, int minK, int maxK) {
+        ios_base::sync_with_stdio(false);
         long long res = 0;
         int minI = -1;
         int maxI = -1;
