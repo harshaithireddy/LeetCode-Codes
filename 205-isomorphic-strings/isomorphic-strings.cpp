@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
+        ios_base::sync_with_stdio(false);
         if(s.size() != t.size()) return false;
 
         unordered_map<char, char> mpp;
