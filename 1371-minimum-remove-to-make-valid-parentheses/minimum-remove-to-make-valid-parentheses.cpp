@@ -2,19 +2,21 @@ class Solution {
 public:
     string minRemoveToMakeValid(string s) {
         ios_base::sync_with_stdio(false);
-        stack<int> st;
+        int open = 0;
         unordered_set<int> set;
 
         for(int i = 0; i < s.size(); i++) {
-            if(s[i] == '(') st.push(i);
+            if(s[i] == '(') open++;
             else if(s[i] == ')') {
-                if(!st.empty()) st.pop();
+                if(open > 0) open--;
                 else set.insert(i);
             }
         }
-        while(!st.empty()) {
-            set.insert(st.top());
-            st.pop();
+        for(int i = s.size()-1; i >= 0 && open > 0; i--) {
+            if(s[i] == '(') {
+                open--;
+                set.insert(i);
+            }
         }
 
         string res = "";
