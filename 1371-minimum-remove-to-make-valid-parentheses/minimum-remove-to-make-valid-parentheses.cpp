@@ -1,6 +1,7 @@
 class Solution {
 public:
     string minRemoveToMakeValid(string s) {
+        ios_base::sync_with_stdio(false);
         stack<int> st;
         unordered_set<int> set;
 
