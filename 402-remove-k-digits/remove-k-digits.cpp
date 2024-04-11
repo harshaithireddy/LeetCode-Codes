@@ -1,6 +1,7 @@
 class Solution {
 public:
     string removeKdigits(string num, int k) {
+        ios_base::sync_with_stdio(false);
         stack<char> st;
         for(auto ch : num) {
             while(!st.empty() && st.top() > ch && k > 0) {
