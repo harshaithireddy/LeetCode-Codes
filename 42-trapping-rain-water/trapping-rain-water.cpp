@@ -1,6 +1,7 @@
 class Solution {
 public:
     int trap(vector<int>& height) {
+        ios_base::sync_with_stdio(false);
         int i = 0;
         int j = height.size() - 1;
 
