@@ -12,6 +12,7 @@
 class Solution {
 public:
     void dfs(TreeNode* root, int val, int depth, int currDepth) {
+        ios_base::sync_with_stdio(false);
         if(root == NULL) return;
 
         if(currDepth < depth - 1) {
