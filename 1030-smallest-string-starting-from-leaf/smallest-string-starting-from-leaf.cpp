@@ -11,23 +11,26 @@
  */
 class Solution {
 public:
-    void traverse(TreeNode* root, vector<string>& ans, string curr) {
+    void traverse(TreeNode* root, string& ans, string& curr) {
         if(root == NULL) return;
         curr += char('a' + root->val);
+
         if(root->left == NULL && root->right == NULL) {
             reverse(curr.begin(), curr.end());
-            ans.push_back(curr);
+            if(ans == "") ans = curr;
+            else ans = min(ans, curr);
+            reverse(curr.begin(), curr.end());
         }
+
         traverse(root->left, ans, curr);
         traverse(root->right, ans, curr);
-
+        curr.pop_back();
     }
     string smallestFromLeaf(TreeNode* root) {
-        ios_base::sync_with_stdio(false);
-        vector<string> ans;
-        traverse(root, ans, "");
-        sort(ans.begin(), ans.end());
+        string ans = "";
+        string curr = "";
+        traverse(root, ans, curr);
 
-        return ans[0];
+        return ans;
     }
 };
