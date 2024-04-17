@@ -13,8 +13,9 @@ class Solution {
 public:
     void traverse(TreeNode* root, vector<string>& ans, string curr) {
         if(root == NULL) return;
-        curr = char('a' + root->val) + curr;
+        curr += char('a' + root->val);
         if(root->left == NULL && root->right == NULL) {
+            reverse(curr.begin(), curr.end());
             ans.push_back(curr);
         }
         traverse(root->left, ans, curr);
@@ -22,6 +23,7 @@ public:
 
     }
     string smallestFromLeaf(TreeNode* root) {
+        ios_base::sync_with_stdio(false);
         vector<string> ans;
         traverse(root, ans, "");
         sort(ans.begin(), ans.end());
