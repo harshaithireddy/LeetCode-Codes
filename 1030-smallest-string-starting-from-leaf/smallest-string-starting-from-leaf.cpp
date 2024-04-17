@@ -13,9 +13,8 @@ class Solution {
 public:
     void traverse(TreeNode* root, vector<string>& ans, string curr) {
         if(root == NULL) return;
-        curr += char('a' + root->val);
+        curr = char('a' + root->val) + curr;
         if(root->left == NULL && root->right == NULL) {
-            reverse(curr.begin(), curr.end());
             ans.push_back(curr);
         }
         traverse(root->left, ans, curr);
