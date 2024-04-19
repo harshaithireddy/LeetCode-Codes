@@ -11,6 +11,7 @@ public:
         dfs(grid, i, j + 1);
     }
     int numIslands(vector<vector<char>>& grid) {
+        ios_base::sync_with_stdio(false);
         int m = grid.size();
         int n = grid[0].size();
         int islands = 0;
