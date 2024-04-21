@@ -9,6 +9,7 @@ public:
         }
     }
     bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
+        ios_base::sync_with_stdio(false);
         vector<bool> vis(n, false);
         vector<vector<int>> grid(n);
         for(auto it : edges) {
