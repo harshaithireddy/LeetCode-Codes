@@ -1,6 +1,7 @@
 class Solution {
 public:
     int numberOfSubstrings(string s) {
+        ios_base::sync_with_stdio(false);
         int a = -1, b = -1, c = -1;
         int cnt = 0;
         for(int i = 0; i < s.size(); i++) {
