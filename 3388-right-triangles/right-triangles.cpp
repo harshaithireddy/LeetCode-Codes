@@ -1,6 +1,9 @@
 class Solution {
 public:
     long long numberOfRightTriangles(vector<vector<int>>& grid) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int n = grid.size();
         int m = grid[0].size();
         vector<int> rowCnt(n, 0), colCnt(m, 0);
