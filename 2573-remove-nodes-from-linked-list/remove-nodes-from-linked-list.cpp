@@ -11,6 +11,9 @@
 class Solution {
 public:
     ListNode* removeNodes(ListNode* head) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         stack<int> st;
         ListNode* temp = head;
         
