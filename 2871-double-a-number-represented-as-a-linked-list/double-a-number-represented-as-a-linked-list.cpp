@@ -21,6 +21,9 @@ public:
         return previous;
     }
     ListNode* doubleIt(ListNode* head) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         ListNode* reversedList = reverseList(head);
         int carry = 0;
         ListNode* current = reversedList, *previous = NULL;
