@@ -1,6 +1,9 @@
 class Solution {
 public:
     vector<string> findRelativeRanks(vector<int>& score) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int n = score.size();
         vector<string> res(n);
 
