@@ -1,6 +1,9 @@
 class Solution {
 public:
     long long maximumHappinessSum(vector<int>& happiness, int k) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         sort(happiness.begin(), happiness.end(), greater<int>());
 
         int dec = 0;
