@@ -1,6 +1,9 @@
 class Solution {
 public:
     double mincostToHireWorkers(vector<int>& quality, vector<int>& wage, int k) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         vector<pair<double, int>> workers; 
         for(int i = 0; i < quality.size(); i++) {
             workers.push_back({(wage[i] * 1.0) / quality[i], quality[i]});
