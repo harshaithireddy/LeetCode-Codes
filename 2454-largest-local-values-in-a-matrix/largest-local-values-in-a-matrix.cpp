@@ -9,8 +9,11 @@ public:
         }
         return maxi;
     }
-    
+
     vector<vector<int>> largestLocal(vector<vector<int>>& grid) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int n = grid.size();
 
         vector<vector<int>> res(n - 2, vector<int>(n - 2));
