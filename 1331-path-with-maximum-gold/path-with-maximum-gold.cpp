@@ -4,7 +4,7 @@ public:
     void traverse(int i, int j, int sum, vector<vector<int>>& grid) {
         int row = grid.size();
         int col = grid[0].size();
-        
+
         if(i < 0 || i >= row || j < 0 || j >= col || grid[i][j] == 0) return;
 
         int temp = grid[i][j];
