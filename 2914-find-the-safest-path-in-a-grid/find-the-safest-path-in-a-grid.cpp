@@ -34,6 +34,9 @@ public:
     }
 
     int maximumSafenessFactor(vector<vector<int>>& grid) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int n = grid.size();
         vector<int> row = {0,0,-1,1};
         vector<int> col = {-1,1,0,0};
