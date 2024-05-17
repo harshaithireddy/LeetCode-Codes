@@ -29,6 +29,9 @@ public:
         }
     }
     TreeNode* removeLeafNodes(TreeNode* root, int target) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+    
         traverse(root, target);
         if(root->left == NULL && root->right == NULL && root->val == target) {
             return NULL;
