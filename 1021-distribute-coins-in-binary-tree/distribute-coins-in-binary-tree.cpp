@@ -22,6 +22,9 @@ public:
         return ((root->val - 1) + left + right);
     }
     int distributeCoins(TreeNode* root) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int res = 0;
         traverse(root, res);
 
