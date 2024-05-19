@@ -1,6 +1,9 @@
 class Solution {
 public:
     long long maximumValueSum(vector<int>& nums, int k, vector<vector<int>>& edges) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         long long sum = 0;
         int cnt = 0;
         int mini = INT_MAX;
