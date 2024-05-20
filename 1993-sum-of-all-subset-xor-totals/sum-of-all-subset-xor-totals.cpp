@@ -1,6 +1,9 @@
 class Solution {
 public:
     int subsetXORSum(vector<int>& nums) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int n = nums.size();
         int sum = 0;
 
