@@ -22,6 +22,9 @@ public:
     }
 
     vector<vector<string>> partition(string s) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         vector<vector<string>> res;
         if(s.empty()) return res;
 
