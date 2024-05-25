@@ -30,6 +30,9 @@ public:
     }
 
     vector<string> wordBreak(string s, vector<string>& wordDict) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         string sentence = "";
         unordered_map<string, bool> doesExist;
         for(auto it : wordDict) {
