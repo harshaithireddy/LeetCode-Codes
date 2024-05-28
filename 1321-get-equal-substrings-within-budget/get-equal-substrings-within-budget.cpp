@@ -1,6 +1,9 @@
 class Solution {
 public:
     int equalSubstring(string s, string t, int maxCost) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int i = 0;
         int j = 0;
         int res = 0;
