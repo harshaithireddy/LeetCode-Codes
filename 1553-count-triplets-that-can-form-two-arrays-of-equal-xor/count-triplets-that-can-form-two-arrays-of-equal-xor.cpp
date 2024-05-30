@@ -1,6 +1,9 @@
 class Solution {
 public:
     int countTriplets(vector<int>& arr) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int n = arr.size();
         int res = 0;
 
