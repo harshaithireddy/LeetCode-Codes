@@ -1,6 +1,9 @@
 class Solution {
 public:
     void reverseString(vector<char>& s) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int i = 0;
         int j = s.size() - 1;
         while(i < j) {
