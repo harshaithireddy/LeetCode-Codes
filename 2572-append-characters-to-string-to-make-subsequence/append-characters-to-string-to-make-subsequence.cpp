@@ -1,6 +1,9 @@
 class Solution {
 public:
     int appendCharacters(string s, string t) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int i = 0;
         int j = 0;
         int n = s.length();
