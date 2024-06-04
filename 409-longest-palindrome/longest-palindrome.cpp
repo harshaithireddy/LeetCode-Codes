@@ -1,6 +1,9 @@
 class Solution {
 public:
     int longestPalindrome(string s) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         unordered_map<char, int> mpp;
         for(auto it : s) {
             mpp[it]++;
