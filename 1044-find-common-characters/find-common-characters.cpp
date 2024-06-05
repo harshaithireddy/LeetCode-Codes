@@ -1,6 +1,9 @@
 class Solution {
 public:
     vector<string> commonChars(vector<string>& words) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         vector<int> freq(26, 100);
 
         for(auto it : words) {
