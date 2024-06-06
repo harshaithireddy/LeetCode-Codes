@@ -1,6 +1,9 @@
 class Solution {
 public:
     bool isNStraightHand(vector<int>& hand, int groupSize) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         if(hand.size() % groupSize != 0) return false;
 
         map<int, int> mpp;
