@@ -1,6 +1,9 @@
 class Solution {
 public:
     int heightChecker(vector<int>& heights) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         vector<int> V(heights);
         sort(V.begin(), V.end());
 
