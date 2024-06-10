@@ -1,15 +1,21 @@
 class Solution {
 public:
     int heightChecker(vector<int>& heights) {
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
-
-        vector<int> V(heights);
-        sort(V.begin(), V.end());
+        vector<int> cnt(101, 0);
+        for(auto it : heights) {
+            cnt[it]++;
+        }
 
         int res = 0;
+        int x = 0;
         for(int i = 0; i < heights.size(); i++) {
-            if(V[i] != heights[i]) res++;
+            while(cnt[x] == 0) x++;
+
+            if(heights[i] == x) cnt[x]--;
+            else {
+                res++;
+                cnt[x]--;
+            }
         }
         return res;
     }
