@@ -1,6 +1,9 @@
 class Solution {
 public:
     int heightChecker(vector<int>& heights) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         vector<int> cnt(101, 0);
         for(auto it : heights) {
             cnt[it]++;
