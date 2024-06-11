@@ -1,6 +1,9 @@
 class Solution {
 public:
     vector<int> relativeSortArray(vector<int>& arr1, vector<int>& arr2) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         vector<int> V(1001, 0);
         for(auto it : arr1) {
             V[it]++;
