@@ -1,6 +1,9 @@
 class Solution {
 public:
     int minPatches(vector<int>& nums, int n) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int i = 0;
         long long sum = 0;
         int cnt = 0;
