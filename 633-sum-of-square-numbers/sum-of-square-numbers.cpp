@@ -1,6 +1,9 @@
 class Solution {
 public:
     bool judgeSquareSum(int c) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         long long b = sqrt(c);
         long long a = 0;
 
