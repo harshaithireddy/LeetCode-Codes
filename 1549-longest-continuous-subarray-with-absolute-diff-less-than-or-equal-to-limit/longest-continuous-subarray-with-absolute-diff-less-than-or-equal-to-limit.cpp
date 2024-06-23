@@ -1,6 +1,9 @@
 class Solution {
 public:
     int longestSubarray(vector<int>& nums, int limit) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         priority_queue<pair<int, int>> maxi;
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> mini;
 
