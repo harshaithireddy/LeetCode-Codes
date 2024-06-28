@@ -1,6 +1,9 @@
 class Solution {
 public:
     long long maximumImportance(int n, vector<vector<int>>& roads) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         vector<int> deg(n, 0);
         for(auto it : roads) {
             deg[it[0]]++;
