@@ -34,6 +34,9 @@ public:
 class Solution {
 public:
     int maxNumEdgesToRemove(int n, vector<vector<int>>& edges) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         sort(edges.begin(), edges.end(), [&](auto const &a, auto const &b) {
             return a[0] > b[0];
         });
