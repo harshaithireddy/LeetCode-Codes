@@ -1,6 +1,9 @@
 class Solution {
 public:
     string countOfAtoms(string formula) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int n = formula.size();
         int i, j, k;
         
