@@ -27,6 +27,9 @@ public:
         path.pop_back();
     }
     string getDirections(TreeNode* root, int startValue, int destValue) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         string path = "";
         dfs(root, path, startValue, destValue);
 
