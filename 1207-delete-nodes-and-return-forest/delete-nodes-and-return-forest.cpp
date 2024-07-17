@@ -37,6 +37,9 @@ public:
         }
     }
     vector<TreeNode*> delNodes(TreeNode* root, vector<int>& to_delete) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         unordered_set<int> st(to_delete.begin(), to_delete.end());
         dfs(root, st, true);
 
