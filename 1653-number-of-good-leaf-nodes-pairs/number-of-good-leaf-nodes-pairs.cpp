@@ -35,6 +35,9 @@ public:
         return V;
     }
     int countPairs(TreeNode* root, int distance) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         dfs(root, distance);
 
         return res;
