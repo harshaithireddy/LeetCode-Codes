@@ -23,8 +23,11 @@ public:
         }
         return mpp[i];
     }
-    
+
     int minHeightShelves(vector<vector<int>>& books, int shelfWidth) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         return helper(0, books, shelfWidth);
     }
 };
