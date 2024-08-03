@@ -1,6 +1,9 @@
 class Solution {
 public:
     bool canBeEqual(vector<int>& target, vector<int>& arr) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         unordered_map<int, int> mpp;
         int n = arr.size();
 
