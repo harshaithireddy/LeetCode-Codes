@@ -1,6 +1,9 @@
 class Solution {
 public:
     int minimumPushes(string word) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         vector<int> freq(26, 0);
 
         for(int i = 0; i < word.size(); i++) {
