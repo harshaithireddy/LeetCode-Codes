@@ -1,6 +1,9 @@
 class Solution {
 public:
     bool lemonadeChange(vector<int>& bills) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int fives = 0;
         int tens = 0;
         for(int i = 0; i < bills.size(); i++) {
