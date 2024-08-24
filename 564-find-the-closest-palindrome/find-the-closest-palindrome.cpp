@@ -12,6 +12,9 @@ private:
 
 public:
     string nearestPalindromic(string numberStr) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         long long number = stoll(numberStr);
         
         if(number <= 10) return to_string(number - 1);
