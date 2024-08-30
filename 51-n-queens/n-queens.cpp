@@ -1,5 +1,7 @@
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); return 0;}();
+    
     void solver(int col, vector <string>& board, vector<vector<string>>& res, vector<int>& leftrow, vector<int>& upperDiagonal, vector<int>& lowerDiagonal, int n) {
       if(col == n) {
         res.push_back(board);
