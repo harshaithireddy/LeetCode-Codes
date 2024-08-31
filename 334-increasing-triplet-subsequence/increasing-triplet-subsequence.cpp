@@ -1,5 +1,6 @@
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
     bool increasingTriplet(vector<int>& nums) {
         int n = nums.size();
 
