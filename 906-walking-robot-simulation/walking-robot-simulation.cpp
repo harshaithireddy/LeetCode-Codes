@@ -1,5 +1,6 @@
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
     int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {
         unordered_map<string, pair<string, string>> mpp;
         mpp["py"] = {"px", "nx"};
