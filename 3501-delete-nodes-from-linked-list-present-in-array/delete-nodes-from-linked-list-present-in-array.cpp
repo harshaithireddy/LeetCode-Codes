@@ -10,6 +10,7 @@
  */
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
     ListNode* modifiedList(vector<int>& nums, ListNode* head) {
         unordered_map<int, int> mpp;
         for(int i = 0; i < nums.size(); i++) mpp[nums[i]]++;
