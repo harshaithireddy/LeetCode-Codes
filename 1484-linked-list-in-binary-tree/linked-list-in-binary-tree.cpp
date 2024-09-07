@@ -31,6 +31,7 @@ private:
         else return false;
     }
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
     bool isSubPath(ListNode* head, TreeNode* root) {
         if(head == NULL) return true;
         if(root == NULL) return false;
