@@ -10,12 +10,13 @@
  */
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
+
     vector<pair<int, int>> dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
     vector<vector<int>> spiralMatrix(int m, int n, ListNode* head) {
         vector<vector<int>> res(m, vector<int> (n, -1));
         if(m == 0 || n == 0) return res;
         
-
         ListNode* temp = head;
         int i = 0, j = 0, di = 0;
         for(int k = 0; k < m * n && temp != NULL; k++) {
