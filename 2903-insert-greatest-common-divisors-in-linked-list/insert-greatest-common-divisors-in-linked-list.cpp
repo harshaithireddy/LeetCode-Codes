@@ -20,8 +20,8 @@ public:
     ListNode* insertGreatestCommonDivisors(ListNode* head) {
         ListNode* temp = head;
         while(temp != NULL && temp->next != NULL) {
-            int Gcd = GCD(temp->val, temp->next->val);
-            ListNode* gcdNode = new ListNode(Gcd);
+            int gcd = GCD(temp->val, temp->next->val);
+            ListNode* gcdNode = new ListNode(gcd);
             gcdNode->next = temp->next;
             temp->next = gcdNode;
             temp = temp->next->next;
