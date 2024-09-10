@@ -17,6 +17,8 @@ private:
         return GCD(b, a % b);
     }
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
+    
     ListNode* insertGreatestCommonDivisors(ListNode* head) {
         ListNode* temp = head;
         while(temp != NULL && temp->next != NULL) {
