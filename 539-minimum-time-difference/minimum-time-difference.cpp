@@ -1,5 +1,7 @@
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
+    
     int convertToMinutes(string time) {
         return stoi(time.substr(0, 2)) * 60 + stoi(time.substr(3, 2));
     }
