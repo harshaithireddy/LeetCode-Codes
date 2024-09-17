@@ -1,5 +1,7 @@
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
+    
     vector<string> uncommonFromSentences(string s1, string s2) {
         unordered_map<string, int> mpp;
         for(int i = 0; i < s1.size(); i++) {
