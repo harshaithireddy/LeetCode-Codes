@@ -1,5 +1,7 @@
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
+    
     static bool comp(int a, int b) {
         string strA = to_string(a);
         string strB = to_string(b);
