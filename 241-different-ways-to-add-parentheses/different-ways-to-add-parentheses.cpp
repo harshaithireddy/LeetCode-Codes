@@ -1,5 +1,7 @@
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
+    
     vector<int> diffWaysToCompute(string expression) {
         vector<int> res;
         for(int i = 0; i < expression.size(); i++) {
