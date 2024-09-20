@@ -1,5 +1,7 @@
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
+    
     string shortestPalindrome(string s) {
         string str(s.rbegin(), s.rend());
 
