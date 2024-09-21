@@ -1,15 +1,15 @@
 class Solution {
 public:
     vector<int> lexicalOrder(int n) {
-        vector<int> V;
+        vector<string> V;
         for(int i = 1; i <= n; i++) {
-            V.push_back(i);
+            V.push_back(to_string(i));
         }
+        sort(V.begin(), V.end());
 
-        sort(V.begin(), V.end(), [](int a, int b) {
-            return to_string(a) <= to_string(b);
-        });
+        vector<int> res;
+        for(int i = 0; i < V.size(); i++) res.push_back(stoi(V[i]));
 
-        return V;
+        return res;
     }
 };
