@@ -1,5 +1,7 @@
 class Solution {
 public:
+    int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
+    
     int longestCommonPrefix(vector<int>& arr1, vector<int>& arr2) {
         if(arr2.size() > arr1.size()) {
             swap(arr1, arr2);
