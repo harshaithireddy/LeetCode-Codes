@@ -2,7 +2,7 @@ class CustomStack {
 public:
     int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
     
-    deque<int> dq;
+    vector<int> V;
     int n;
 
     CustomStack(int maxSize) {
@@ -10,20 +10,20 @@ public:
     }
     
     void push(int x) {
-        if(dq.size() == n) return;
-        dq.push_front(x);
+        if(V.size() == n) return;
+        V.push_back(x);
     }
     
     int pop() {
-        if(dq.empty()) return -1;
-        int ele = dq.front();
-        dq.pop_front();
+        if(V.empty()) return -1;
+        int ele = V.back();
+        V.pop_back();
         return ele;
     }
     
     void increment(int k, int val) {
-        for(int i = 0; i < k && i < dq.size(); i++) {
-            dq[dq.size() - i - 1] += val;
+        for(int i = 0; i < k && i < V.size(); i++) {
+            V[i] += val;
         }
     }
 };
