@@ -1,3 +1,10 @@
+char init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 'c';
+}();
+
 class Solution {
 public:
     bool canArrange(vector<int>& arr, int k) {
