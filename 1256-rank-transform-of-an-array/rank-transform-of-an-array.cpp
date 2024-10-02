@@ -1,6 +1,7 @@
 class Solution {
 public:
     int speedup = []{ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0;}();
+    
     vector<int> arrayRankTransform(vector<int>& arr) {
         vector<int> temp = arr;
         unordered_map<int, int> mpp;
