@@ -3,7 +3,8 @@ auto speedup = []() {
     cin.tie(nullptr);
     cout.tie(nullptr);
     return 'c';
-};
+}();
+
 class Solution {
 public:
     long long dividePlayers(vector<int>& skill) {
