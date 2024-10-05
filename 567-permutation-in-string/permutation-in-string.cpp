@@ -1,6 +1,10 @@
 class Solution {
 public:
     bool checkInclusion(string s1, string s2) {
+        ios::sync_with_stdio(false);
+        cin.tie(nullptr);
+        cout.tie(nullptr);
+        
         int n1 = s1.size();
         int n2 = s2.size();
 
