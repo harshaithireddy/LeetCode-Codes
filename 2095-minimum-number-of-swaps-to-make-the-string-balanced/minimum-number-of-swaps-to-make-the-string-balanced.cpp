@@ -1,8 +1,14 @@
+auto init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 'c';
+}();
+
 class Solution {
 public:
     int minSwaps(string s) {
         int n = s.size();
-        int open = 0;
         int cnt = 0;
         for(int i = 0; i < n; i++) {
             if(s[i] == '[') cnt++;
