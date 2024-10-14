@@ -1,10 +1,17 @@
+auto speedUp = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    return 'c++';
+}();
+
 class Solution {
 public:
     int minOperations(vector<int>& nums, int k) {
         ios::sync_with_stdio(false);
         cin.tie(0);
         cout.tie(0);
-        
+
         priority_queue<long long, vector<long long>, greater<long long>> pq(nums.begin(), nums.end());
         int cnt = 0;
 
