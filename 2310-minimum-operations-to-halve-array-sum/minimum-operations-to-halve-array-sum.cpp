@@ -1,6 +1,10 @@
 class Solution {
 public:
     int halveArray(vector<int>& nums) {
+        ios::sync_with_stdio(false);
+        cin.tie(0);
+        cout.tie(0);
+        
         double sum = accumulate(nums.begin(), nums.end(), 0.0);
         double half = sum / 2.0;
 
