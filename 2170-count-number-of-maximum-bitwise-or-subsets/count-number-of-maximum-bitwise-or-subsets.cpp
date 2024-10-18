@@ -11,6 +11,10 @@ public:
         fun(nums, ind + 1, orr, cnt, maxOr);
     }
     int countMaxOrSubsets(vector<int>& nums) {
+        ios::sync_with_stdio(false);
+        cin.tie(0);
+        cout.tie(0);
+        
         int maxOr = nums[0];
         for(int i = 1; i < nums.size(); i++) {
             maxOr |= nums[i];
