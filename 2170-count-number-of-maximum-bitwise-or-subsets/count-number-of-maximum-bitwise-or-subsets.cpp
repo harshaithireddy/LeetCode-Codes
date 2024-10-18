@@ -1,3 +1,10 @@
+auto sppedUp = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    return 'c++';
+}();
+
 class Solution {
 public:
     void fun(vector<int>& nums, int ind, int orr, int& cnt, int maxOr) {
