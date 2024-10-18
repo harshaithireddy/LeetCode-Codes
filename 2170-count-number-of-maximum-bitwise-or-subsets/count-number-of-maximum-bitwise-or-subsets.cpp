@@ -1,10 +1,6 @@
 class Solution {
 public:
     void fun(vector<int>& nums, int ind, int orr, int& cnt, int maxOr) {
-        ios::sync_with_stdio(false);
-        cin.tie(0);
-        cout.tie(0);
-        
         if(ind == nums.size()) {
             if(orr == maxOr) cnt++;
             return;
