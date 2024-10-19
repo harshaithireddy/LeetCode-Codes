@@ -1,10 +1,3 @@
-auto speedUp = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-    return 'c++';
-}();
-
 class Solution {
 public:
     string fun(string s) {
@@ -16,6 +9,10 @@ public:
     }
     
     char findKthBit(int n, int k) {
+        ios::sync_with_stdio(false);
+        cin.tie(0);
+        cout.tie(0);
+        
         if(k == 1) return '0';
 
         string s = "0";
