@@ -1,6 +1,10 @@
 class Solution {
 public:
     string fun(string s) {
+        ios::sync_with_stdio(false);
+        cin.tie(0);
+        cout.tie(0);
+        
         string x = "";
         for(int j = s.size() - 1; j >= 0; j--) {
             x += s[j] == '0' ? '1' : '0';
@@ -12,7 +16,7 @@ public:
         ios::sync_with_stdio(false);
         cin.tie(0);
         cout.tie(0);
-        
+
         if(k == 1) return '0';
 
         string s = "0";
