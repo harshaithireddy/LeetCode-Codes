@@ -1,3 +1,10 @@
+auto SpeedUp = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 'c++';
+}();
+
 class Solution {
 private:
         char fun(vector<char>& V, char op) {
