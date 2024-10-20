@@ -1,10 +1,3 @@
-auto SpeedUp = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    return 'c++';
-}();
-
 class Solution {
 private:
         char fun(vector<char>& V, char op) {
@@ -27,6 +20,10 @@ private:
     }
 public:
     bool parseBoolExpr(string expression) {
+        ios::sync_with_stdio(false);
+        cin.tie(nullptr);
+        cout.tie(nullptr);
+        
         vector<int> open;
         int n = expression.size();
 
