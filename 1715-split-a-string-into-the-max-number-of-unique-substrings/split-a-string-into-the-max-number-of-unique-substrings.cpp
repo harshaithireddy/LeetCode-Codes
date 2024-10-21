@@ -1,3 +1,10 @@
+auto speedUp = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    return 'c++';
+}();
+
 class Solution {
 public:
     void fun(string& s, int ind, int& maxCount, unordered_set<string>& st) {
