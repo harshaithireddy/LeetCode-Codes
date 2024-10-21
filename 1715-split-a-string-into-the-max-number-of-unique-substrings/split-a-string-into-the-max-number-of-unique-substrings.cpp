@@ -1,10 +1,3 @@
-auto speedUp = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-    return 'c++';
-}();
-
 class Solution {
 public:
     void fun(string& s, int ind, int& maxCount, unordered_set<string>& st) {
@@ -25,6 +18,10 @@ public:
     }
 
     int maxUniqueSplit(string s) {
+        ios::sync_with_stdio(false);
+        cin.tie(0);
+        cout.tie(0);
+
         int maxCount = 0;
         unordered_set<string> st;
         fun(s, 0, maxCount, st);
