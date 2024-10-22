@@ -9,6 +9,14 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+auto init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    return 'c';
+}();
+
 class Solution {
 public:
     void bfs(TreeNode* root, int level, int k, auto& pq) {
