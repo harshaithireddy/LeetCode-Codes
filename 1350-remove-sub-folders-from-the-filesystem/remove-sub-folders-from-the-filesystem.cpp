@@ -1,3 +1,10 @@
+auto init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    return 'c';
+}();
+
 class Solution {
 public:
     vector<string> removeSubfolders(vector<string>& folder) {
@@ -9,7 +16,7 @@ public:
         for(int i = 1; i < folder.size(); i++) {
             if(folder[i].find(temp + "/") != 0) {
                 res.push_back(folder[i]);
-                temp=folder[i];
+                temp = folder[i];
             }
         }
         return res;
