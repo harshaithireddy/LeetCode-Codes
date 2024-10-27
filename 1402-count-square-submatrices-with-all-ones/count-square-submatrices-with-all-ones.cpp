@@ -1,3 +1,10 @@
+auto init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    return 'c';
+}();
+
 class Solution {
 public:
     int countSquares(vector<vector<int>>& matrix) {
