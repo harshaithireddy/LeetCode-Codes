@@ -1,13 +1,10 @@
-auto init = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-    return 'c';
-}();
-
 class Solution {
 public:
     int findPairs(vector<int>& nums, int k) {
+        ios::sync_with_stdio(false);
+        cin.tie(0);
+        cout.tie(0);
+
         unordered_map<int, int> mpp;
         int n = nums.size();
         for(int i = 0; i < n; i++) {
