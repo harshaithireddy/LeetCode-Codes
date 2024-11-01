@@ -2,9 +2,9 @@ class Solution {
 public:
     string makeFancyString(string s) {
         ios::sync_with_stdio(false);
-        cin.tie(0);
-        cout.tie(0);
-        
+        cin.tie(nullptr);
+        cout.tie(nullptr);
+
         string res;
         int cnt = 1;
         res += s[0];
