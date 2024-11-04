@@ -1,13 +1,10 @@
-auto init = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-    return 'c';
-}();
-
 class Solution {
 public:
     string compressedString(string word) {
+        ios::sync_with_stdio(false);
+        cin.tie(0);
+        cout.tie(0);
+
         string res = "";
         char curr = word[0];
         int cnt = 1;
