@@ -1,13 +1,10 @@
-auto init = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cin.tie(nullptr);
-    return 'c';
-}();
-
 class Solution {
 public:
     int largestCombination(vector<int>& candidates) {
+        ios::sync_with_stdio(false);
+        cin.tie(nullptr);
+        cin.tie(nullptr);
+
         int res = 0;
         for(int bit = 0; bit < 32; bit++) {
             int cnt = 0;
