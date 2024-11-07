@@ -6,7 +6,7 @@ public:
         cin.tie(nullptr);
 
         int res = 0;
-        for(int bit = 0; bit < 32; bit++) {
+        for(int bit = 0; bit < 24; bit++) {
             int cnt = 0;
             for(int i = 0; i < candidates.size(); i++) {
                 if(candidates[i] & (1 << bit)) cnt++;
