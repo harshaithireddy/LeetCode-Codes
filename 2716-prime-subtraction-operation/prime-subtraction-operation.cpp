@@ -1,20 +1,15 @@
-auto init = [](){
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    return 'c';
-}();
-
 class Solution {
 public:
     bool primeSubOperation(vector<int>& nums) {
-        vector<bool> Prime(1001, true);
-        Prime[0] = Prime[1] = false;
+        vector<int> primes;
+        vector<bool> isPrime(1001, true);
+        isPrime[0] = isPrime[1] = false;
         
-        for(int i = 2; i * i <= 1000; i++) {
-            if(Prime[i]) {
+        for(int i = 2; i <= 1000; i++) {
+            if(isPrime[i]) {
+                primes.push_back(i);
                 for(int j = i * i; j <= 1000; j += i) {
-                    Prime[j] = false;
+                    isPrime[j] = false;
                 }
             }
         }
@@ -22,9 +17,11 @@ public:
         int prev = 0;
         for(int i = 0; i < nums.size(); i++) {
             bool flag = false;
-            for(int j = nums[i] - 1; j >= 2; j--) {
-                if(Prime[j] && nums[i] - j > prev) {
-                    nums[i] -= j;
+            
+            for(int j = primes.size() - 1; j >= 0; j--) {
+                int prime = primes[j];
+                if(prime < nums[i] && nums[i] - prime > prev) {
+                    nums[i] -= prime;
                     prev = nums[i];
                     flag = true;
                     break;
@@ -36,7 +33,6 @@ public:
             }
             prev = nums[i];
         }
-        
         return true;
     }
 };
