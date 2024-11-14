@@ -3,7 +3,7 @@ public:
     bool solver(vector<int>& q, int n, int x) {
         int stores = 0;
         for(auto it : q) {
-            stores += (it + x - 1) / x;
+            stores += (it + x - 1) / x; // ceil(it / x)
         }
         return stores <= n;
     }
