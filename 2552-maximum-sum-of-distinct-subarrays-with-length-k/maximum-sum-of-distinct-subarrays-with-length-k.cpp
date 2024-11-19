@@ -1,3 +1,10 @@
+auto init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 'c';
+}();
+
 class Solution {
 public:
     long long maximumSubarraySum(vector<int>& nums, int k) {
