@@ -1,10 +1,6 @@
 class Solution {
 public:
     bool canChange(string start, string target) {
-        ios::sync_with_stdio(false);
-        cin.tie(nullptr);
-        cout.tie(nullptr);
-
         int s_id = 0, t_id = 0;
         int n = start.size();
 
