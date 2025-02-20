@@ -5,7 +5,7 @@ public:
         string res = "";
         
         for(int i = 0; i < n; i++) {
-            res += (nums[i][i] == '0' ? '1' : '0'); 
+            res.push_back(nums[i][i] == '0' ? '1' : '0'); 
         }
         return res;
     }
