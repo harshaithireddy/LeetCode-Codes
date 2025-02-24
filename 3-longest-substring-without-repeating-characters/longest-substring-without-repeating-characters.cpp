@@ -1,24 +1,20 @@
 class Solution {
 public:
-    Solution() {
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
-    }
     int lengthOfLongestSubstring(string s) {
+        unordered_map<char, int> mpp;
+        int l = 0, r = 0;
         int maxi = 0;
-        for(int i = 0; i < s.size(); i++) {
-            unordered_map<char, int> mpp;
-            for(int j = i; j < s.size(); j++) {
-                mpp[s[j]]++;
-                if(mpp[s[j]] > 1) {
-                    int size = mpp.size();
-                    maxi = max(maxi, size);
-                    break;
+
+        while(r < s.size()) {
+            mpp[s[r]]++;
+            if(mpp[s[r]] > 1) {
+                while(mpp[s[r]] > 1) {
+                    mpp[s[l]]--;
+                    l++;
                 }
             }
-            int size = mpp.size();
-            maxi = max(maxi, size);
-            if(maxi == s.size()) break;
+            maxi = max(maxi, (r - l + 1));
+            r++;
         }
         return maxi;
     }
