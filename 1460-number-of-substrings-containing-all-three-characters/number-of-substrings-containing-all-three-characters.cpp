@@ -1,18 +1,21 @@
 class Solution {
 public:
     int numberOfSubstrings(string s) {
-        ios_base::sync_with_stdio(false);
-        int a = -1, b = -1, c = -1;
-        int cnt = 0;
-        for(int i = 0; i < s.size(); i++) {
-            if(s[i] == 'a') a = i;
-            if(s[i] == 'b') b = i;
-            if(s[i] == 'c') c = i;
+        unordered_map<char, int> mpp;
+        int n = s.size();
+        int l = 0;
+        int res = 0;
 
-            if(a != -1 && b != -1 && c != -1) {
-                cnt += min(min(a, b), c) + 1;
+        for(int r = 0; r < n; r++) {
+            mpp[s[r]]++;
+
+            while(mpp.size() == 3) {
+                res += n - r;
+                mpp[s[l]]--;
+                if(mpp[s[l]] == 0) mpp.erase(s[l]);
+                l++;
             }
         }
-        return cnt;
+        return res;
     }
 };
