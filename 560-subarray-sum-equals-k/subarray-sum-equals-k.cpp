@@ -6,8 +6,8 @@ public:
         int res = 0;
         mpp[sum] = 1;
 
-        for(auto it : nums) {
-            sum += it;
+        for(int i = 0; i < nums.size(); i++) {
+            sum += nums[i];
             if(mpp.find(sum - k) != mpp.end()){
                 res += mpp[sum - k];
             }
