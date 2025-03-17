@@ -8,7 +8,9 @@ public:
             int x = (num1[i] - '0') + (num2[j] - '0') + carry;
             carry = x / 10;
             x = x % 10;
-            s = to_string(x) + s;
+            char d = '0';
+            d += x;
+            s.push_back(d);
             i--;
             j--;
         }
@@ -17,7 +19,9 @@ public:
             int x = (num1[i] - '0') + carry;
             carry = x / 10;
             x = x % 10;
-            s = to_string(x) + s;
+            char d = '0';
+            d += x;
+            s.push_back(d);
             i--;
         }
 
@@ -25,11 +29,15 @@ public:
             int x = (num2[j] - '0') + carry;
             carry = x / 10;
             x = x % 10;
-            s = to_string(x) + s;
+            char d = '0';
+            d += x;
+            s.push_back(d);
             j--;
         }
 
-        if(carry) s = '1' + s;
+        if(carry) s.push_back('1');
+
+        reverse(s.begin(), s.end());
 
         return s;
     }
