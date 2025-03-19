@@ -19,7 +19,6 @@ public:
 
         if(nums[n-1] == 0 || nums[n-2] == 0) return -1;
         return res;
-
     }
 };
 
