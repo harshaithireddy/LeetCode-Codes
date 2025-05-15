@@ -1,13 +1,8 @@
 class Solution {
 public:
-    bool checkInclusion(string s1, string s2) {
-        ios::sync_with_stdio(false);
-        cin.tie(nullptr);
-        cout.tie(nullptr);
-        
+    bool checkInclusion(string s1, string s2) {       
         int n1 = s1.size();
         int n2 = s2.size();
-
         if(n1 > n2) return false;
 
         vector<int> x(26, 0);
@@ -16,10 +11,10 @@ public:
         for(int i = 0; i < n1; i++) x[s1[i] - 'a']++;
         for(int i = 0; i < n1; i++) y[s2[i] - 'a']++;
 
-        for(int i = 0; i < n2 - n1; i++) {
+        for(int i = n1; i < n2; i++) {
             if(x == y) return true;
-            y[s2[i] - 'a']--;
-            y[s2[i + n1] - 'a']++;
+            y[s2[i - n1] - 'a']--;
+            y[s2[i] - 'a']++;
         }
         if(x == y) return true;
         return false;
