@@ -6,8 +6,7 @@ public:
             return;
         }
 
-        fun(nums, ind +1, orr | nums[ind], cnt, maxOr);
-
+        fun(nums, ind + 1, orr | nums[ind], cnt, maxOr);
         fun(nums, ind + 1, orr, cnt, maxOr);
     }
     int countMaxOrSubsets(vector<int>& nums) {
@@ -15,6 +14,7 @@ public:
         for(int i = 1; i < nums.size(); i++) {
             maxOr |= nums[i];
         }
+
         int cnt = 0;
         fun(nums, 0, 0, cnt, maxOr);
 
