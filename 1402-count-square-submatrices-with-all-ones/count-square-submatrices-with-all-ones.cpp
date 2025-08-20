@@ -1,10 +1,3 @@
-auto init = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-    return 'c';
-}();
-
 class Solution {
 public:
     int countSquares(vector<vector<int>>& matrix) {
@@ -12,10 +5,7 @@ public:
         for(int i = 0; i < matrix.size(); i++) {
             for(int j = 0; j < matrix[0].size(); j++) {
                 if(i > 0 && j > 0 && matrix[i][j] > 0) {
-                    matrix[i][j] = max(matrix[i][j], 1 + min(
-                        min(matrix[i - 1][j], matrix[i][j - 1]),
-                        matrix[i - 1][j - 1]
-                    ));
+                    matrix[i][j] = max(matrix[i][j], 1 + min(min(matrix[i - 1][j], matrix[i][j - 1]), matrix[i - 1][j - 1]));
                 }
                 res += matrix[i][j];
             }
